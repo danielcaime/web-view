@@ -13,7 +13,7 @@ import isEmpty from 'lodash/isEmpty';
 import request from 'request';
 
 //const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
-const PAGE_ACCESS_TOKEN = "EAAEf42L9QdwBAPPMenaYWIXOqeQimSSBWD2l21z8Oi1ZC4cPYqChaUENrBLxCWwIg4s3bfbTliZAVv9VjFnj67ULmAInjKp7qTCWZCjxzXZC2GqpVTNrsZAYMmCFRadQXuZB1mm1DS81qjVCS0ZAN6y4N8rqzZALoJZAgZAgSLVby2EQZDZD";
+const PAGE_ACCESS_TOKEN = "EAACUpq5e0rABAHsztWDK6BE1ZACgzNgxcjYN7LsWyfy3XghZAkqZAVy95hvxarqqXcbiNrrbi7xK0H6CXKmDp1ui4MueHA2EuFrzwdzcLoiNhhBThRZAXv7liqR7YKZC4ZBBZBosi0uzSjLDQfnHaqZBDg2XWjZBuKR5vXsgnfrmVegZDZD";
 
 /**
  * Send messages in order to the Facebook graph API.
