@@ -4,7 +4,7 @@ This is the folder for Victoria Belle, a bot that demonstrates best practices fo
 **[<img src="../docs/assets/ViewMessenger.png" width="200">](https://m.me/VictoriaBelleCo)**
 
 ## Everything we used to make this Bot
-55555555555555555555555
+
 ### Technologies used
 #### ECMAScript 7 (“ES7” / JavaScript)
 ECMAScript™ is the standard behind JavaScript. It has had a number of very useful additions over the past several years, modernizing the syntax and providing new capabilities.
