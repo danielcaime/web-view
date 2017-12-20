@@ -22,7 +22,8 @@ const router = express.Router();
  * as well as in your servers environment.
  */
 router.get('/', (req, res) => {
-  if (req.query['hub.verify_token'] === process.env.WEBHOOK_TOKEN) {
+  //if (req.query['hub.verify_token'] === process.env.WEBHOOK_TOKEN) {
+  if (req.query['hub.verify_token'] === "EAACAkqiqJOMBAEaQ1UmddCyTGs9bnM2t3cZAWiRU6UuTlcTKma8RrniNudF4eNmbsCGZAkLZBx5VUKt9kBrlcFZCAVOfQXc8numHi8m8d26DCEXKl1FDgliuwZBZAOZC5QBFkgPlKYrUx7QuxrUPuaCRZAB6dU2Hb8nj9yYRZA95Jw34ZAlZCpIRVZAbKWim4ZA5WKJwZD"){
     res.send(req.query['hub.challenge']);
   } else {
     res.send('Error, wrong token');
