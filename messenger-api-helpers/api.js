@@ -43,7 +43,8 @@ const callAPI = (endPoint, messageDataArray, queryParams = {}, retries = 5) => {
 
   // ensure query parameters have a PAGE_ACCESS_TOKEN value
   /* eslint-disable camelcase */
-  const query = Object.assign({access_token: PAGE_ACCESS_TOKEN}, queryParams);
+  //const query = Object.assign({access_token: PAGE_ACCESS_TOKEN}, queryParams);
+  const query = "EAACAkqiqJOMBAEaQ1UmddCyTGs9bnM2t3cZAWiRU6UuTlcTKma8RrniNudF4eNmbsCGZAkLZBx5VUKt9kBrlcFZCAVOfQXc8numHi8m8d26DCEXKl1FDgliuwZBZAOZC5QBFkgPlKYrUx7QuxrUPuaCRZAB6dU2Hb8nj9yYRZA95Jw34ZAlZCpIRVZAbKWim4ZA5WKJwZD";//Object.assign({access_token: PAGE_ACCESS_TOKEN}, queryParams);
   /* eslint-enable camelcase */
 
   // ready the first message in the array for send.
