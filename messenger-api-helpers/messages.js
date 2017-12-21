@@ -124,8 +124,9 @@ const currentGiftButton = (recipientId) => {
         template_type: 'generic',
         elements: [
           {
-            title: `Your Gift: ${gift.name}`,
-            image_url: gift.images.original,
+            title: `Su producto: ${gift.name}`,
+            //image_url: gift.images.original,
+            image_url: 'http://static.cotodigital.com.ar/sitios/fotos/full/00268700/00268705.jpg',
             subtitle: gift.description,
             buttons: [
               viewDetailsButton(gift.id),
