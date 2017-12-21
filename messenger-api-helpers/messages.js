@@ -85,7 +85,8 @@ const helloRewardMessage = {
     type: 'template',
     payload: {
       template_type: 'button',
-      text: 'Thanks for joining our reward program! We’d love to send you a free birthday gift.',
+      //text: 'Thanks for joining our reward program! We’d love to send you a free birthday gift.',
+      text: 'Bienvenido, selecciones un producto de nuestro catálogo',
       buttons: [setPreferencesButton],
     },
   },
