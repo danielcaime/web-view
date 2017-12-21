@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
   if (req.query['hub.verify_token'] === process.env.WEBHOOK_TOKEN) {
     res.send(req.query['hub.challenge']);
   } else {
-    res.send('Error, wrong token'+req.query['hub.verify_token']);
+    res.send('Error, wrong token'+process.env.WEBHOOK_TOKEN);
   }
 });
 
