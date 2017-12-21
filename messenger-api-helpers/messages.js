@@ -86,7 +86,7 @@ const helloRewardMessage = {
     payload: {
       template_type: 'button',
       //text: 'Thanks for joining our reward program! We’d love to send you a free birthday gift.',
-      text: 'Bienvenido, selecciones un producto de nuestro catálogo',
+      text: 'Bienvenido, seleccione un producto de nuestro catálogo',
       buttons: [setPreferencesButton],
     },
   },
@@ -200,7 +200,8 @@ const giftOptionsCarosel = (recipientId) => {
 const giftChangedMessage = (recipientId) => {
   const {preferredGift, dateOfBirth} = UserStore.get(recipientId);
   return {
-    text: `Perfect! You can look forward to the ${preferredGift.name} on ${dateString(dateOfBirth)}. `,
+    //text: `Perfect! You can look forward to the ${preferredGift.name} on ${dateString(dateOfBirth)}. `,
+    text: `Usted seleccionó  ${preferredGift.name} para su cumpleaños ${dateString(dateOfBirth)}. `,
   };
 };
 
