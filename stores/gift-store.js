@@ -69,7 +69,7 @@ GIFT_STORE.insert(
     'moisturizers-softening',
     'Softening Cream',
     {
-      original: 'http://static.cotodigital.com.ar/sitios/fotos/videos/00268700/00268705_v01.mp4',
+      original: 'http://static.cotodigital.com.ar/sitios/fotos/full/00460800/00460815_g02.jpg',
       square: `${SERVER_URL}/media/moisturizers/softening-square.jpg`,
     },
     'A rich, creamy moisturizer that smooths & softens extremely dry skin.',
@@ -82,7 +82,7 @@ GIFT_STORE.insert(
     'moisturizers-revitalizing',
     'Revitalizing Cream',
     {
-      original: `${SERVER_URL}/media/moisturizers/revitalizing-new.jpg`,
+      original: `http://static.cotodigital.com.ar/sitios/fotos/full/00460800/00460815.jpg`,
       square: `${SERVER_URL}/media/moisturizers/revitalizing-square.jpg`,
     },
     'Super Revitalizing Cream reveals beautifully resilient-looking skin.',
