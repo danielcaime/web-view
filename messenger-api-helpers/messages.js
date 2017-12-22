@@ -30,7 +30,7 @@ const SERVER_URL = process.env.SERVER_URL;
  */
 const setPreferencesButton = {
   type: 'web_url',
-  title: 'Set Gift Preferences',
+  title: 'Elegir preferencias',
   url: `${SERVER_URL}/`,
   webview_height_ratio: 'tall',
   messenger_extensions: true,
@@ -227,7 +227,7 @@ const giftChangedMessage = (recipientId) => {
 const giftPurchasedMessage = (giftId) => {
   const purchasedItem = GiftStore.get(giftId);
   return {
-    text: `Thank you for purchasing the ${purchasedItem.name}!  `,
+    text: `Gracias ${purchasedItem.name}!  `,
   };
 };
 

@@ -56,7 +56,7 @@ GIFT_STORE.insert(
     'moisturizers-kara',
     'VB Cream',
     {
-      original: `${SERVER_URL}/media/moisturizers/kara-new.jpg`,
+      original: 'http://static.cotodigital.com.ar/sitios/fotos/full/00268700/00268705.jpg',
       square: `${SERVER_URL}/media/moisturizers/kara-square.jpg`,
     },
     'A light, non-greasy formula, providing effective and refreshing hydration.',
@@ -69,7 +69,7 @@ GIFT_STORE.insert(
     'moisturizers-softening',
     'Softening Cream',
     {
-      original: `${SERVER_URL}/media/moisturizers/softening-new.jpg`,
+      original: 'http://static.cotodigital.com.ar/sitios/fotos/videos/00268700/00268705_v01.mp4',
       square: `${SERVER_URL}/media/moisturizers/softening-square.jpg`,
     },
     'A rich, creamy moisturizer that smooths & softens extremely dry skin.',
