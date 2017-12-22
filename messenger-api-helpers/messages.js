@@ -41,7 +41,7 @@ const setPreferencesButton = {
  */
 const viewDetailsButton = (giftId) => {
   return {
-    title: 'View Details',
+    title: 'Detalle',
     type: 'web_url',
     url: `${SERVER_URL}/gifts/${giftId}`,
     webview_height_ratio: 'compact',
@@ -55,7 +55,7 @@ const viewDetailsButton = (giftId) => {
 const chooseGiftButton = (giftId) => {
   return {
     type: 'postback',
-    title: 'Choose This Gift',
+    title: 'Elegir producto',
     payload: JSON.stringify({
       type: 'CHOOSE_GIFT',
       data: {
@@ -70,7 +70,7 @@ const chooseGiftButton = (giftId) => {
  */
 const changeGiftButton = {
   type: 'postback',
-  title: 'Change Gift',
+  title: 'Cambiar producto',
   payload: JSON.stringify({
     type: 'CHANGE_GIFT',
   }),
@@ -92,18 +92,30 @@ const helloRewardMessage = {
   },
 };
 
+const hellodMessage = {
+  attachment: {
+    type: 'template',
+    payload: {
+      template_type: 'button',
+      //text: 'Thanks for joining our reward program! We’d love to send you a free birthday gift.',
+      text: 'Bienvenido, seleccione un producto de nuestro catálogo',
+      buttons: [setPreferencesButton],
+    },
+  },
+};
+
 /**
  * Message that informs the user that their preferences have changed.
  */
 const preferencesUpdatedMessage = {
-  text: 'OK, we’ve updated your preferences. You can change them anytime you want from the menu.',
+  text: 'actualizar.',
 };
 
 /**
  * Message that informs that we have their current gift selected.
  */
 const currentGiftText = {
-  text: 'This is your current gift selection. If you’d like to change it, you can do so below.',
+  text: 'Este es el producto seleccionado.',
 };
 
 /**
@@ -143,7 +155,7 @@ const currentGiftButton = (recipientId) => {
  * Message that precedes us displaying recommended gifts.
  */
 const giftOptionsText = {
-  text: 'Here are some gift options for you:',
+  text: 'Estas son las opciones, seleccione',
 };
 
 /**
