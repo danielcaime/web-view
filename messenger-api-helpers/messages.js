@@ -258,7 +258,7 @@ const getStarted = {
 };
 
 export default {
-  hellodMessage,
+  helloRewardMessage,
   preferencesUpdatedMessage,
   currentGiftText,
   currentGiftButton,
