@@ -97,9 +97,7 @@ const hellodMessage = {
     type: 'template',
     payload: {
       template_type: 'button',
-      //text: 'Thanks for joining our reward program! We’d love to send you a free birthday gift.',
-      text: 'Bienvenido, seleccione un producto de nuestro catálogo',
-      buttons: [setPreferencesButton],
+      text: 'Bienvenido.¿En que podemos ayudarlo?',
     },
   },
 };
@@ -259,7 +257,7 @@ const getStarted = {
 };
 
 export default {
-  helloRewardMessage,
+  hellodMessage,
   preferencesUpdatedMessage,
   currentGiftText,
   currentGiftButton,
