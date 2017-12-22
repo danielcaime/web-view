@@ -98,6 +98,7 @@ const hellodMessage = {
     payload: {
       template_type: 'button',
       text: 'Bienvenido.¿En que podemos ayudarlo?',
+      buttons: [setPreferencesButton],
     },
   },
 };
