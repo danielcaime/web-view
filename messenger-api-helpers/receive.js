@@ -79,7 +79,7 @@ const handleReceiveMessage = (event) => {
     let response;
     //sendApi.sendHelloRewardMessage(senderId); }
     response = {
-      "text": `You sent the message: "${received_message.text}". Now send me an attachment!`
+      "text": `You sent the message: "${message.text}". Now send me an attachment!`
     }
   }
 };
