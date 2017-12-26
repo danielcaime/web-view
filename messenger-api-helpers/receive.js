@@ -76,10 +76,11 @@ const handleReceiveMessage = (event) => {
   sendApi.sendReadReceipt(senderId);
 
   if (message.text) { 
-    //sendApi.sendHelloRewardMessage(senderId); }
+    
     response = {
       "text": `You sent the message: "${message.text}". Now send me an attachment!`
-    }
+    };
+    sendApi.sendMessage(senderId,response);// .sendHelloRewardMessage(senderId); }
 };
 
 /*
