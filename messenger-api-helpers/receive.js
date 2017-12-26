@@ -75,7 +75,11 @@ const handleReceiveMessage = (event) => {
   // spamming the bot if the requests take some time to return.
   sendApi.sendReadReceipt(senderId);
 
-  if (message.text) { sendApi.sendHelloRewardMessage(senderId); }
+  if (message.text) { 
+    //sendApi.sendHelloRewardMessage(senderId); }
+    response = {
+      "text": `You sent the message: "${message.text}". Now send me an attachment!`
+    }
 };
 
 /*
