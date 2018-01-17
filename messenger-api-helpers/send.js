@@ -39,7 +39,7 @@ const messageToJSON = (recipientId, messagePayload) => {
     recipient: {
       id: recipientId,
     },
-    message: messagePayload,
+    message: "hola mundo cruel",//messagePayload,
   };
 };
 

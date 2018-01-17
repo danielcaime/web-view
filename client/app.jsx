@@ -48,6 +48,7 @@ import {dateString} from '../utils/date-string-format';
 
 import Gift from '../models/gift';
 import User from '../models/user';
+import proxysrv from '../atgservice/atgserviceproxy';
 
 const {ENVIRONMENTS} = User;
 
@@ -77,7 +78,17 @@ export default class App extends React.PureComponent {
    * we wish to display the options in the UI.
    */
 
-  static giftCategories = [
+  // static list = '';
+  // proxysrv.then(data => {
+  //     static temp = JSON.parse(data);
+  //       static giftCategories = temp.result.productos;
+
+  //       res.render('./search', {
+  //           producList:list
+  //           });
+  //   });
+    
+    static giftCategories = [
     {
       title: 'Moisturizers',
       subtitle: 'Daily moisturizers & night creams',
