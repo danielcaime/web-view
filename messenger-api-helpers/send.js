@@ -39,7 +39,7 @@ const messageToJSON = (recipientId, messagePayload) => {
     recipient: {
       id: recipientId,
     },
-    message: "hola mundo cruel",//messagePayload,
+    message: messagePayload,
   };
 };
 
@@ -70,7 +70,7 @@ const sendReadReceipt = (recipientId) => {
 // Send the initial message telling the user about the promotion.
 const sendHelloRewardMessage = (recipientId) => {
   logger.fbLog("send_message", {payload: "hello_reward"}, recipientId);
-  sendMessage(recipientId, messages.helloRewardMessage);
+  sendMessage(recipientId, "hola mundo lalaal");//.helloRewardMessage);
 };
 
 // Send a message indicating to a user that their preferences have changed.
