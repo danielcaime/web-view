@@ -70,7 +70,7 @@ const sendReadReceipt = (recipientId) => {
 // Send the initial message telling the user about the promotion.
 const sendHelloRewardMessage = (recipientId) => {
   logger.fbLog("send_message", {payload: "hello_reward"}, recipientId);
-  sendMessage(recipientId, "hola mundo lalaal");//.helloRewardMessage);
+  sendMessage(recipientId, messages.helloRewardMessage);
 };
 
 // Send a message indicating to a user that their preferences have changed.
