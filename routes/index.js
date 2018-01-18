@@ -19,7 +19,7 @@ router.get('/', (_, res) => {
       var temp = JSON.parse(data);
       list = temp.result.productos;
 
-      res.render('./search', {
+      res.render('./index', {
           producList:list
           });
   });   
