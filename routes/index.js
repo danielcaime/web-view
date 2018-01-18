@@ -12,7 +12,19 @@ const router = express.Router();
 
 // GET home page for the application
 router.get('/', (_, res) => {
-  res.render('./index', {demo: process.env.DEMO, title: 'Seleccione un producto'});
+  var proxysrv = require('./atgservice/atgserviceproxy');
+
+  var list = '';
+  proxysrv.then(data => {
+      var temp = JSON.parse(data);
+      list = temp.result.productos;
+
+      res.render('./search', {
+          producList:list
+          });
+  });   
+
+  //res.render('./index', {demo: process.env.DEMO, title: 'Seleccione un producto'});
 });
 
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>buscar</title>
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style>
+    body    { padding-top:50px; }
+</style>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body class="container">
+
+<header>
+    <% include ./header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>This is great</h1>
+        <p>Welcome to templating using EJS</p>
+    </div>
+</main>
+
+<h2>Productos</h2>
+
+
+<ul>
+    <% producList.forEach(function(producto) { %>
+        <li><div class=""><%= producto.nombre %> - <%= producto.nombre %> -
+            <img src=<%= producto.imagenes.pathMini[0] %> alt="" class="logo">
+        </div>
+        </li>
+    <% }); %>
+</ul>
+
+<footer>
+    <% include ./footer %>
+</footer>
+
+</body>
+</html>
