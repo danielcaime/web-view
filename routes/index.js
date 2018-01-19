@@ -14,17 +14,17 @@ const router = express.Router();
 router.get('/', (_, res) => {
   var proxysrv = require('./atgservice/atgserviceproxy');
 
-  var list = '';
-  proxysrv.then(data => {
-      var temp = JSON.parse(data);
-      list = temp.result.productos;
+  // var list = '';
+  // proxysrv.then(data => {
+  //     var temp = JSON.parse(data);
+  //     list = temp.result.productos;
 
-      res.render('./index', {
-          producList:list
-          });
-  });   
+  //     res.render('./index', {
+  //         producList:list
+  //         });
+  // });   
 
-  //res.render('./index', {demo: process.env.DEMO, title: 'Seleccione un producto'});
+  res.render('./index', {demo: process.env.DEMO, title: 'Seleccione un producto'});
 });
 
 
