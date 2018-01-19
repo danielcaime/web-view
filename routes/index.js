@@ -12,7 +12,7 @@ const router = express.Router();
 
 // GET home page for the application
 router.get('/', (_, res) => {
-  var proxysrv = require('./atgservice/atgserviceproxy');
+  //var proxysrv = require('./atgservice/atgserviceproxy');
 
   // var list = '';
   // proxysrv.then(data => {
